@@ -1,0 +1,116 @@
+.form {
+    margin: 0 auto;
+    width: 85%;
+}
+
+body p {
+    color: red;
+    font-size: 16px;
+}
+
+.formDiv {
+    margin: 100px;
+}
+
+.form input[type="text"] {
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.form label {
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.form #add,
+#clear,
+#done {
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.todoList {
+    margin: 100px;
+    width: 70%;
+    border: 2px bold black;
+    border-width: 2px;
+    border-color: darkgray;
+    border-style: dashed;
+    padding: 10px;
+}
+
+.todoList button {
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li .checkBox {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid #1c1f24;
+    position: relative;
+    outline: 0;
+}
+
+ul {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style: none;
+    border: 2px solid #3b434e;
+    width: 80%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+}
+
+ul li label {
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.checkBox:checked:after {
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: black;
+}
+
+.checkBox:checked+label {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .3);
+}
+
+.strikeOut {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .3);
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    /*these properties will make buttons look like a label on html */
+    outline: none;
+    border: none;
+}
